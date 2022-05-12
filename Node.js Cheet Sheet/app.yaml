@@ -1,0 +1,8 @@
+runtime: nodejs12
+
+env_variables:
+    DB_USER: DATABASE_USER
+    DB_PASS: DATABASES_PASS
+    DB_NAME: DATABASE_NAME
+    DB_PORT: PORT
+    DB_PATH: /cloudsql/DATABASE_ID

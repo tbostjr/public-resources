@@ -1,0 +1,18 @@
+{
+    "http": {
+        "hostname": "localhost",
+        "port": 3000
+    },
+    "db": {
+        "database": "database",
+        "host": "localhost",
+        "port": 3306,
+        "user": "admin",
+        "password": "password",
+        "connectionLimit": 10
+    },
+    "auth":{
+        "secret": "mySecret",
+        "saltRounds": 10
+    }
+}

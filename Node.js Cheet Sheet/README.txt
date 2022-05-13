@@ -18,6 +18,8 @@ Variable Notes:
 		a) The images folder is not publicly hosted. If you would like for all files to be avaiable to users, just move the folder into public and remove the static route in server.js.
 	5) pager-utils.js 
 		a) This is a pre-built utility produced by Paul Smith from Ranken Technical College for implementing pagers for item lists. The partial has also been provided. To view a demonstraion of its implementation, go to https://youtu.be/YHS9f81ypw8
+	6) .env
+		a) Don't forget to add your .env file, or the debugging setup here will not work.
 Shortcuts:
 	'req' + tab: Will build out library require statements.
 

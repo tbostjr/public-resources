@@ -3,7 +3,7 @@ require('dotenv').config();
 /*[ START -- Library Imports ]*/
 const express = require('express');
 const handlebars = require('express-handlebars');
-const debug = require('debug')('app:server');
+const debug = require('debug')('server:server');
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const moment = require('moment');
@@ -16,23 +16,21 @@ const moment = require('moment');
 
 /*[ START -- Server Config ]*/
 const app = express();
-app.engine(
-  'handlebars',
-  handlebars({
-    helpers: {
-      formatPrice: (price) => {
-        return price == undefined ? '$0.00' : '$' + price.toFixed(2);
-      },
-      formatDate: (date) => moment(date).format('MMMM Do YYYY'),
-      fromNow: (date) => moment(date).fromNow(),
-      not: (value) => !value,
-      eq: (a, b) => a == b,
-      or: (a, b) => a || b,
-      and: (a, b) => a && b,
-      tern: (condition, a, b) => (condition ? a : b),
-    },
-  })
-);
+const handlebarsHelpers = handlebars.create({
+  helpers: {
+       formatPrice: (price) => {
+            return price == undefined ? '$0.00' : '$' + price.toFixed(2);
+       },
+       formatDate: (date) => moment(date).format('MMMM Do YYYY'),
+       fromNow: (date) => moment(date).fromNow(),
+       not: (value) => !value,
+       eq: (a, b) => a == b,
+       or: (a, b) => a || b,
+       and: (a, b) => a && b,
+       tern: (condition, a, b) => (condition ? a : b),
+  },
+});
+app.engine('handlebars', handlebars.engine());
 
 app.set('view engine', 'handlebars');
 app.use(express.urlencoded({ extended: false }));
@@ -42,7 +40,8 @@ app.use(cookieParser());
 
 /*[ START -- Routes ]*/
 app.get('/', (req, res) => {
-  res.render('home', { title: 'Home' });
+  res.render('home', {title: "Home"});
+
 });
 /*[ END -- Routes ]*/
 

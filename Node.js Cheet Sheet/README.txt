@@ -1,3 +1,4 @@
+VERSION 2.0.0
 --THIS FILE SHOULD BE REPURPOSED OR REMOVED AFTER IMPLEMENTATION--
 
 This file is a template for creating Node.js web applications with support for MySQL or Mongo NoSQL databases. 
@@ -24,15 +25,13 @@ Shortcuts:
 	'req' + tab: Will build out library require statements.
 
 NPM Packages:
-	npm i --save express express-handlebars debug dotenv config mysql knex lodash morgan bootstrap jquery bootswatch moment cookie-parser jsonwebtoken bcrypt mongodb @sendgrid/mail j
-
-oi 
+	npm i --save express express-handlebars debug dotenv config mysql knex lodash morgan bootstrap jquery bootswatch moment cookie-parser jsonwebtoken bcrypt mongodb @sendgrid/mail joi 
 
 
 Extras:
 	If you have any questions, suggestions, concerns, or comments, you can contact us at:
-		Email: tj.brandon.leo@gmail.com
-		Phone: (573) 326-4558
+		Email: ---
+		Phone: ----
 
 
 ---- Created by Troy Bost JR of LEO Technologies ----

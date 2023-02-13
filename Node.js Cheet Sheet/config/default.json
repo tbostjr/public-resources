@@ -3,6 +3,7 @@
         "hostname": "localhost",
         "port": 3000
     },
+    /* SQL DB
     "db": {
         "database": "database",
         "host": "localhost",
@@ -11,6 +12,14 @@
         "password": "password",
         "connectionLimit": 10
     },
+    */
+
+    /* Mongo DB
+     "db": {
+         "url": "mongoURL",
+         "name": "DBNAME",
+         "poolSize": 5
+     },*/
     "auth":{
         "secret": "mySecret",
         "saltRounds": 10

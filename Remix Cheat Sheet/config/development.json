@@ -1,0 +1,16 @@
+{
+    "http": {
+        "hostname": "localhost",
+        "port": 3000
+    },
+    "db": {
+        "url": "",
+        "name": "",
+        "poolSize": 15
+    },
+    "auth":{
+        "secret": "",
+        "googleSecret":"",
+        "saltRounds":  15
+    }
+}

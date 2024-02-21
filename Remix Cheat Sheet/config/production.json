@@ -1,0 +1,12 @@
+{
+    "db": {
+        "url": "",
+        "name": "",
+        "poolSize": 15
+    },
+    "auth":{
+        "secret": "",
+        "googleSecret":"",
+        "saltRounds": 10
+    }
+}
